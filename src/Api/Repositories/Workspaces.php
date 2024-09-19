@@ -26,6 +26,8 @@ use Bitbucket\Api\Repositories\Workspaces\DiffStat;
 use Bitbucket\Api\Repositories\Workspaces\Downloads;
 use Bitbucket\Api\Repositories\Workspaces\Environments;
 use Bitbucket\Api\Repositories\Workspaces\FileHistory;
+use Bitbucket\Api\Repositories\Workspaces\UserPermissions;
+use Bitbucket\Api\Repositories\Workspaces\GroupPermissions;
 use Bitbucket\Api\Repositories\Workspaces\Forks;
 use Bitbucket\Api\Repositories\Workspaces\Hooks;
 use Bitbucket\Api\Repositories\Workspaces\Issues;
@@ -161,6 +163,22 @@ class Workspaces extends AbstractRepositoriesApi
     public function commits(string $repo)
     {
         return new Commits($this->getClient(), $this->workspace, $repo);
+    }
+
+    /**
+     * @return UserPermissions
+     */
+    public function userPermissions(string $repo): UserPermissions
+    {
+        return new UserPermissions($this->getClient(), $this->workspace, $repo);
+    }
+
+    /**
+     * @return GroupPermissions
+     */
+    public function groupPermissions(string $repo): GroupPermissions
+    {
+        return new GroupPermissions($this->getClient(), $this->workspace, $repo);
     }
 
     /**
