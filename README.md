@@ -78,7 +78,7 @@ $client->authenticate(
 );
 ```
 
-> If you have two-factor authentication enabled on your account, then you must use an [application password](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/).
+If you have two-factor authentication enabled on your account, then you must use an [application password](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/). You can find your Bitbucket username [here](https://bitbucket.org/account/settings/).
 
 #### JSON Web Token
 
