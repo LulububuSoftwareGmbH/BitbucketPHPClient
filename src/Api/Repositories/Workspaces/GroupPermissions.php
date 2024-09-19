@@ -25,9 +25,9 @@ class GroupPermissions extends AbstractWorkspacesApi
     /**
      * @param array $params
      *
-     * @return array
      * @throws \Http\Client\Exception
      *
+     * @return array
      */
     public function list(array $params = [])
     {
@@ -40,9 +40,9 @@ class GroupPermissions extends AbstractWorkspacesApi
      * @param string $commit
      * @param array  $params
      *
-     * @return array
      * @throws \Http\Client\Exception
      *
+     * @return array
      */
     public function show(string $group, array $params = [])
     {
@@ -55,9 +55,9 @@ class GroupPermissions extends AbstractWorkspacesApi
      * @param string $group
      * @param array  $params
      *
-     * @return array
      * @throws \Http\Client\Exception
      *
+     * @return array
      */
     public function update(string $group, array $params = [])
     {
@@ -70,9 +70,9 @@ class GroupPermissions extends AbstractWorkspacesApi
      * @param string $group
      * @param array  $params
      *
-     * @return array
      * @throws \Http\Client\Exception
      *
+     * @return array
      */
     public function remove(string $group, array $params = [])
     {
